@@ -1,0 +1,164 @@
+/*
+Custom Css
+*/
+/* body style start */
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* body style end */
+/* loader style start*/
+#loader-wrapper{
+    display: none;
+}
+ #loader {
+    margin: 0;
+    padding: 0;
+    background: #efefef;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 9;
+}
+
+
+.Loadercontainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.circle
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    animation: loader 0.6s ease-in-out infinite;
+}
+
+.circle
+{
+    background: red;
+    animation-delay: .2s;
+}
+
+
+@keyframes loader{
+    0%
+    {
+        transform: translate(0px,0px);
+    }
+    50%
+    {
+       transform: translate(0px,-20px); 
+    }
+    100%
+    {
+        transform: translate(0px,0px);
+    }
+} 
+
+/* loader style end*/
+
+
+/*logo dot style start*/
+
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex !important;
+    align-items: center;
+}
+
+
+/* logo dot style end*/
+
+
+
+/*trending categories style start*/
+
+.TrendingCategoriesImg{
+    height: 20em !important;
+}
+/*trending categories style start*/
+
+
+/* carousel style start*/
+
+.carouselHeight{
+    height: 40rem !important;
+}
+
+@media (min-width:360px) and (max-width:991px){
+
+.carouselHeight{
+    height: 60rem !important;
+}
+}
+
+/*carousel style end*/
+
+
+/*featured card style start*/
+
+.featuredCard{
+    background-image: url("../img/img1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: auto;
+    background-color: aqua !important;
+
+}
+
+/*featured card style end*/
+
+
+.aboutHeroImg{
+    width: 100%;
+}
+
+
+.brandsHeight{
+    height: 10em !important;
+}
+
+
+
+.adNav{
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+}
+
+@media (min-width:384px) and (max-width:767px){
+    .stickNavPadding{
+        padding-left: 2em !important;
+    }
+}
+
+@media (min-width:180px) and (max-width:383px){
+    .stickNavPadding{
+        padding-top: 1em !important;
+    }
+}
+
+.stickyContact{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}

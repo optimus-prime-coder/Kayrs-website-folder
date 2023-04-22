@@ -1,0 +1,242 @@
+/* body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+    height: 100vh;
+    background: #D0D3D4;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+.circle
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    animation: loader 0.6s ease-in-out infinite;
+}
+.circle:nth-child(1)
+{
+    background: Yellow;
+    animation-delay: .1s;
+}
+.circle:nth-child(2)
+{
+    background: red;
+    animation-delay: .2s;
+}
+.circle:nth-child(3)
+{
+    background: blue;
+    animation-delay: .3s;
+}
+
+@keyframes loader{
+    0%
+    {
+        transform: translate(0px,0px);
+    }
+    50%
+    {
+       transform: translate(0px,-20px); 
+    }
+    100%
+    {
+        transform: translate(0px,0px);
+    }
+} */
+
+ /* Preloader Add */
+
+#loader-wrapper{
+    display: none;
+}
+ #loader {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 9;
+}
+
+.ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 3s linear infinite;
+    opacity: .3;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.remove{display: none;
+}
+.circle
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    animation: loader 0.6s ease-in-out infinite;
+}
+.circle:nth-child(1)
+{
+    background: Yellow;
+    animation-delay: .1s;
+}
+.circle:nth-child(2)
+{
+    background: red;
+    animation-delay: .2s;
+}
+.circle:nth-child(3)
+{
+    background: blue;
+    animation-delay: .3s;
+}
+
+@keyframes loader{
+    0%
+    {
+        transform: translate(0px,0px);
+    }
+    50%
+    {
+       transform: translate(0px,-20px); 
+    }
+    100%
+    {
+        transform: translate(0px,0px);
+    }
+} 
+
+
+/* @keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+   
+}
+
+.ring:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+.textDim {
+    color:#737373 ;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: effect 3s  linear infinite ;
+    font-family: montserrat;
+}
+
+
+
+@keyframes effect {
+    50% {
+        color:  rgba(1, 1, 46, 1);
+    }
+
+    80%{
+        color: green;
+    }
+}
+
+.disappear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
+
+/** about section **/
+
+.about {
+    margin-top: 90px;
+    background: #23262d;
+    padding: 60px 0;
+}
+
+.about .titlepage h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about .titlepage span {
+    color: #fff;
+    font-size: 17px;
+}
+
+.about .about_box {
+    text-align: center;
+}
+
+.about .about_box figure {
+    margin: 0;
+}
+
+.about .about_box figure img {
+    width: 100%;
+}
+
+.about .about_box .read_more {
+    background: #000;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.about .about_box .read_more:hover {
+    background: #f55171;
+}
+
+
+/** end about section **/
+
+
+.firstCarousel{
+    background-image: url('https://cdn.cssauthor.com/wp-content/uploads/2015/09/Electro-Store.jpg?strip=all&lossy=1&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
